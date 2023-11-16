@@ -20,9 +20,25 @@ class VehicleTest {
     */
 
     @Test
-    void CarIsVehicle(){
-       assertThat(car instanceof, Vehicle.class);
+    void carIsVehicle(){
+       assertThat(car instanceof Vehicle);
     }
+
+    /*Проверить, что объект Car создается с 4-мя колесами.*/
+
+    @Test
+    void carHaveFourWheels(){
+        assertThat(car.getNumWheels()).isEqualTo(4);
+    }
+
+    /*Проверить, что объект Motorcycle создается с 2-мя колесами.*/
+    @Test
+    void motorcycleHaveTwoWheels(){
+        assertThat(motorcycle.getNumWheels()).isEqualTo(2);
+    }
+
+
+
 
 
 
