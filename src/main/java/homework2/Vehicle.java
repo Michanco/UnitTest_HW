@@ -1,4 +1,4 @@
-
+package homework2;
 
 public abstract class Vehicle {
     private String company;
